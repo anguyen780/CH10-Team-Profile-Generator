@@ -5,7 +5,7 @@ const generateHTML = team => {
         <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h2 class="card-title">${manager.name}</h2>
-          <h3>${manager.role}</h3>
+          <h5>${manager.role}</h5>
           <p class="card-text">ID: ${manager.id}</p>
           <p class="card-text">Email: <a href='mailto:${manager.email}'>${manager.email}</a></p>
           <p class="card-text">Office Number: ${manager.officeNumber}</p>
@@ -19,7 +19,7 @@ const generateHTML = team => {
         <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h2 class="card-title">${engineer.name}</h2>
-          <h3>${engineer.role}</h3>
+          <h5>${engineer.role}</h5>
           <p class="card-text">ID: ${engineer.id}</p>
           <p class="card-text">Email: <a href='mailto:${engineer.email}'>${engineer.email}</a></p>
           <p class="card-text">GitHub: <a href='https://github.com/${engineer.github}'>${engineer.github}</a></p>
@@ -33,7 +33,7 @@ const generateHTML = team => {
         <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h2 class="card-title">${intern.name}</h2>
-          <h3>${intern.role}</h3>
+          <h5>${intern.role}</h5>
           <p class="card-text">ID: ${intern.id}</p>
           <p class="card-text">Email: <a href='mailto:${intern.email}'>${intern.email}</a></p>
           <p class="card-text">School: ${intern.school}</p>
@@ -91,7 +91,7 @@ const createTeamPage = function (memberBlocks){
 
     <main>
         <div class="container">
-            <div class="row justify-content-center m-5">
+            <div class="row justify-content-center justify-content-around m-5">
                 ${memberBlocks}
             </div>
         </div>
